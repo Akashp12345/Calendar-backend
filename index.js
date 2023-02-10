@@ -21,7 +21,7 @@ app.use(express.json())
 app.use(bodyparser.json())
 app.use(cors())
 
-app.post("https://calendar-mjzv.onrender.com/", async (req, res) => {
+app.post("/", async (req, res) => {
       try {
             if (req.body.Date) {
                   let appoint = new AppointModel({
